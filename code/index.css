@@ -108,6 +108,11 @@ h5 {
   border-radius: 1.5%;
   cursor: pointer;
 }
+.card:hover {
+  transform: translate(0, -6px);
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 15px 40px rgba(28, 28, 28, 0.2);
+}
 .card-top {
   background: linear-gradient(213.14deg, #2C2C2C 6.85%, #141414 93.15%, #2C2E30);
   width: 100%;
@@ -225,16 +230,100 @@ h5 {
 
 /* Small Monitor */
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-
+  /* Hero */
+  .hero-graphic {
+    max-width: 50%;
+  }
+  /* Card */
+  .card-row {
+    justify-content: space-around;
+  }
+  .CTA-image {
+    width: 100%;
+    height: auto;
+  }
 
 }
 
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
-
+  /* Hero */
+  .hero {
+    height: 600px;
+  }
+  .hero-graphic {
+    max-width: 400px;
+    margin-top: 5%;
+  }
+  .page-header {
+    margin-right: 8%;
+  }
+  /* CTA */
+  .CTA-content-container {
+    margin-top: 60px;
+  }
+  .CTA-content .CTA-text-left {
+    margin: 0 10%;
+  }
+  .CTA-content .CTA-text-right {
+    margin: 0 11%;
+  }
+  .CTA-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+
+  /* Hero */
+  .hero {
+    height: 700px;
+  }
+  .hero .container {
+    text-align: center;
+  }
+  .hero-graphic {
+    max-width: 350px;
+    margin-top: 7%;
+  }
+  .above-fold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .page-header {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  /* Card */
+  .page {
+    padding-top: 70px;
+  }
+  .card-row {
+    justify-content: center;
+  }
+  .card {
+    width: 95%;
+    height: 386px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .top-row-card {
+    margin-bottom: 30px;
+  }
+  /* CTA */
+  .CTA-content-container {
+    margin-top: 50px;
+  }
+  /* Footer */
+  .footer .footer-logo {
+    left: 35%;
+  }
+  .footer .container span {
+    left: 50%
+  }
 }
